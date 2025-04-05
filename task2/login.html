@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-panel {
+            background-color: #2874f0;
+            color: white;
+            width: 40%;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: CENTER;
+        }
+
+        .left-panel h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .left-panel p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .left-panel img {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .right-panel {
+            background-color: #f1f3f6;
+            width: 60%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content:CENTER;
+        }
+
+        .right-panel input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #121010;
+            border-radius: 4px;
+            border-bottom: 1px solid #ccc;
+            background: transparent;
+        }
+
+        .right-panel p {
+            font-size: 14px;
+            color: #878787;
+            margin-bottom: 20px;
+        }
+
+        .right-panel p a {
+            color: #2874f0;
+            text-decoration:none;
+        }
+
+        .otp-button {
+            background-color: #fb641b;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signup-link {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <h2>Login</h2>
+        <p>Get access to your Orders,<br>Wishlist and<br>Recommendations</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkAt7ZbDmujKpaDF-z0dvuJ2Rio6VjW_AaXg&s" alt="Login Visual">
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+        <input type="text" placeholder="Enter Email/Mobile number">
+        <p>By continuing, you agree to Flipkart's 
+            <a href="#">Terms of Use</a> and 
+            <a href="#">Privacy Policy</a>
+        </p>
+        <button class="otp-button">Request OTP</button>
+        <div class="signup-link">
+            New to Flipkart? <a href="#">Create an account</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
