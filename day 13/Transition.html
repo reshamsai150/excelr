@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Task1</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin:10px 0;
+
+        }
+        .without{
+            background-color: blue;
+        }
+        .with{
+            background-color: green;
+            /* transition-duration:2s;
+            transition-property:all;
+            transition-delay:1s; */
+            /* transition:property duration timing-function delay;\ */
+            transition: all 2s ease-in-out 1s;
+        }
+        .box:hover{
+           transform:rotate(90deg);
+           background-color:pink;
+        }
+        </style>
+</head>
+<body>
+    <h1>Transition Task1</h1>
+    <hr>
+    <p>It is used to animate the elements </p>
+    <p>It is used to change the style,position of the elements</p>
+    <p>It will apply when hover is using </p>
+    <pre>
+        1.Transition-property: it provide the information on properties
+        2.transition-duration:iot is used to provide duration
+        3.transition-timing-function:it is used to apply timings
+        4.transition-delay:It is used to delay the transition
+
+        shorthand structure:
+        transition:property duration timing-function delay;
+        transition:property duration;
+    <div class="box without">without Transition</div>
+    <div class="box with">with Transition</div>
+</body>
+</html>
