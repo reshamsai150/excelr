@@ -1,0 +1,238 @@
+
+
+
+* {
+    box-sizing: border-box; /* Fixed incorrect value 'border-top' */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex; /* Added flexbox for proper layout */
+    flex-direction: column; /* Stack header, main, and footer vertically */
+}
+
+header {
+    height: 20%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightcoral;
+    color: black;
+}
+
+main {
+    flex: 1; /* Ensures main takes up remaining space */
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+        "section section aside";
+    grid-template-columns: 2fr 1fr; /* Adjusts section and aside widths */
+    gap: 10px; /* Adds spacing between grid items */
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+section {
+    border: 1px solid black;
+    grid-area: section; /* Added grid-area for proper layout */
+    margin:10px;
+    border-radius:10px;
+    height:70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+    padding:10px;
+}
+
+aside {
+    border: 1px solid black;
+    grid-area: aside; /* Added grid-area for proper layout */
+}
+
+.article1 {
+    border: 1px solid black;
+    background-color: lightblue;
+    grid-area: article1; /* Fixed typo in grid-area name */
+    margin:10px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+}
+
+.article2 {
+    border: 1px solid black;
+    background-color: lightgreen;
+    grid-area: article2; /* Fixed typo in grid-area name */
+    margin:10px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+}
+
+a {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em; /* Adjusted font size for better readability */
+    text-decoration: none;
+}
+
+figure {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(211, 85, 192);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section {
+    min-height: 300px; /* Adjust as per need */
+    height: auto; /* Allows content to expand properly */
+}
+
+/* 
+img{
+    height:100px;
+    width:100px;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 20%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightcoral;
+    color: black;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 40px;;
+    background-color: rgb(185, 26, 202);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "section section aside";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+section {
+    border: 1px solid black;
+    grid-area: section;
+    margin: 10px;
+    border-radius: 10px;
+    min-height: 300px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: white;
+}
+
+aside {
+    border: 1px solid black;
+    grid-area: aside;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.article1, .article2 {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.article1 {
+    background-color: lightblue;
+}
+
+.article2 {
+    background-color: lightgreen;
+}
+
+figure {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: rgb(211, 85, 192);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: auto;
+}

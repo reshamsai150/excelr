@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+   border:1px solid red;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+    }
+    @media(width:400px)  {
+div{
+    background-color: red;
+}
+    }
+  
+    .nav{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f0f0f0;
+        margin: 5px;
+       height:10%;
+        justify-content: flex-end;
+        align-items: center;;
+    }
+    .navItem{
+        font-size:2em;
+    color:white;
+        margin: 20px;
+    }
+
+    </style>
+<body>
+    <h1>Media Query</h1>
+    <p>It is used to create responsive pages</p>
+    <hr>
+<div class="nav">
+    <div class="navItem">Home</div>
+    <div class="navItem">About Us</div>
+    <div class="navItem">Our Menu</div>
+    <div class="navItem">Contact Us</div>
+    <div class="navItem">Login</div>
+    </div>
+ 
+</div>
+<div>
+    <h2>Footer</h2>
+
+</div>
+</body>
+</html>

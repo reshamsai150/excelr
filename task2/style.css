@@ -1,0 +1,199 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+  }
+  
+  .header {
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo span {
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .search-bar {
+    padding: 0.5rem;
+    width: 250px;
+  }
+  
+  .menu-heading {
+    padding: 1rem;
+  }
+  
+  .pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .pizza-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .pizza-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #111;
+    color: #fff;
+  }
+  
+  .footer .logo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer input[type="email"] {
+    padding: 0.5rem;
+    width: 250px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer button {
+    background: orange;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons span {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .footer-right {
+    max-width: 400px;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin: 10px 0;
+}
+
+.price {
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top: 1px solid #eee;
+}
+  .card-img-top {
+    border-top-left-radius: 0.5rem; /* Align rounded corners with the card */
+    border-top-right-radius: 0.5rem;
+    padding:10px; /* Add padding around the image */
+    width: 100%; /* Ensure the image takes full width */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Add padding for a spacious look */
+    background-color: #f8f9fa; /* Light background color for the card body */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for the card body */
+    border-radius: 0 0 0.5rem 0.5rem; /* Rounded corners for the bottom of the card */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Make the title stand out */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 0.75rem; /* Add space below the title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Set a readable font size */
+    color: #6c757d; /* Slightly muted text color */
+    margin-bottom: 1rem; /* Add spacing below the text */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Set the button color */
+    border-color: #007bff; /* Match button border color */
+    color: #ffffff; /* White text */
+    border-radius: 0.25rem; /* Slightly rounded button edges */
+  }
+  
+  

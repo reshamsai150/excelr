@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heading Task</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            background-color: pink;
+            font-size: 20px;
+        }
+        .child {
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .childone {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    <p>Hello!</p>
+    <div class="container"> 
+        <div class="child">
+            <div class="childone">
+                Hello! I am inside the grid.
+            </div>
+        </div>
+    </div>
 </body>
-<h1 style="color:teal; background-color:pink">Heading</h1>
-<i style="color:teal; background-color:pink">Heading</i>
-<p>hii iam       here</p>
-<pre>hii iam        there </pre>
 </html>
