@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Loops, Operators and Conditions</title>
+</head>
+<body>
+
+<h2>Check Numbers Using Loops, Operators, and Conditions</h2>
+<div id="result"></div>
+
+<script>
+  // Array of numbers
+  const numbers = [10, -3, 0, 7, -8, 5];
+
+  let output = "";
+
+  // Loop through each number
+  for (let i = 0; i < numbers.length; i++) {
+    let num = numbers[i];
+
+    output += `Number: ${num} → `;
+
+    // Check if number is positive, negative or zero
+    if (num > 0) {
+      output += "Positive, ";
+    } else if (num < 0) {
+      output += "Negative, ";
+    } else {
+      output += "Zero, ";
+    }
+
+    // Check if number is even or odd using modulus operator
+    if (num % 2 === 0) {
+      output += "Even<br>";
+    } else {
+      output += "Odd<br>";
+    }
+  }
+
+  // Display result in the div
+  document.getElementById("result").innerHTML = output;
+</script>
+
+</body>
+</html>
